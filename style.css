@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family:'Karla', sans-serif;
+    background-color:hsl(204, 43%, 93%);
+}
+
+.container{
+   
+    width: 635px;
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    
+}
+
+.blue{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color:hsl(204, 43%, 93%);
+    
+   
+    
+}
+
+.monthly{
+    
+    background-color: hsl(179, 62%, 43%);
+    padding:45px 40px 40px 40px;
+    
+}
+
+.monthly h1{
+    font-size: 1.1em;
+    margin-bottom: 23px;
+}
+.monthly p{
+    font-size: 0.95em;
+    margin-top: 15px;
+}
+.dolar{
+    display: flex;
+   
+}
+.price{
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+.per{
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 0.5;
+    
+}
+.why{
+    background-color:hsl(179, 62%, 43%, 0.8) ;
+    padding: 45px 75px 40px 41px;
+  
+    
+
+}
+.why h1{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+.why li{
+    font-size: 0.84em;
+    letter-spacing: 0.2px;
+    color:hsl(204, 43%, 93%);
+    opacity: 0.8;
+    padding-bottom: 7px;
+    list-style-type: none;
+    
+}
+
+button{
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding:15px 91px;
+    margin-top: 35px;
+    color:white;
+    font-weight: 700;
+    font-size: 0.9em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+
+}
+.join{
+    padding: 40px 80px 48px 40px;
+    background-color: white;
+  
+}
+.join h1{
+    color:hsl(179, 62%, 43%);
+    font-size: 1.5em;
+}
+.join h2{
+    color:hsl(71, 73%, 54%);
+    margin-top: 24px;
+    font-size: 1.1em;
+    
+}
+
+.join p{
+    color: hsl(218, 22%, 67%);
+    font-size: 0.97em;
+    margin-top: 12px;
+    line-height: 25px;
+   
+}
+
+@media screen and (max-width:375px) {
+
+    .container{
+        max-width:310px;
+    }
+    .blue{
+
+        grid-template-columns: 1fr;
+    }
+    .join{
+        padding: 25px;
+    }
+    .why{
+        padding: 25px;
+    }
+    .monthly{
+        padding: 25px;
+    }
+    button{
+        padding: 15px 102px;
+    }
+   
+
+    .join h1{
+        font-size: 1.3em;
+    }
+    .join h2{
+        font-size: 1em;
+    }
+    .join p{
+        font-size: 0.9em;
+    }
+
+    
+
+}
